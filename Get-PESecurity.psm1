@@ -91,6 +91,7 @@ function Get-PESecurity
       AMD64 = 0x8664 # AMD64 (K8)
       M32R = 0x9041 # M32R little-endian
       CEE = 0xC0EE
+      ARM64 = 0xAA64 # ARM64
     }
 
     $ImageFileCharacteristics = enumerate $Mod PE.IMAGE_FILE_CHARACTERISTICS UInt16 @{
